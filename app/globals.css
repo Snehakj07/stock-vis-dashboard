@@ -1,0 +1,9 @@
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background: linear-gradient(to bottom right, #f8fafc, #eff6ff);
+}
+
+* {
+  box-sizing: border-box;
+}
