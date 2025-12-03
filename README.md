@@ -197,7 +197,7 @@ This project is open source and available under the MIT License.
 
 ## 🙏 Acknowledgments
 
-- Inspired by the [NYC Taxi Visualization](https://nyc-taxi-vis.vercel.app/)
+
 - Built with modern web technologies
 - Data visualization powered by Recharts
 
