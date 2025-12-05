@@ -64,49 +64,6 @@ The project includes a data generation script that creates realistic stock data 
 3. **Cleaning**: Handle null values for early periods where rolling windows are incomplete
 4. **Export**: Save processed data to `data/stocks.json`
 
-### Running the Data Script
-```bash
-node scripts/generate-data.js
-```
-
-## 🚀 Getting Started
-
-### Prerequisites
-- Node.js 18+ installed
-- npm or yarn package manager
-
-### Installation
-
-1. **Clone or navigate to the project**:
-```bash
-cd stock-vis-dashboard
-```
-
-2. **Install dependencies**:
-```bash
-npm install
-```
-
-3. **Generate data** (already done, but you can regenerate):
-```bash
-node scripts/generate-data.js
-```
-
-4. **Run the development server**:
-```bash
-npm run dev
-```
-
-5. **Open your browser**:
-Navigate to [http://localhost:3000](http://localhost:3000)
-
-### Build for Production
-
-```bash
-npm run build
-npm start
-```
-
 ## 📁 Project Structure
 
 ```
@@ -155,29 +112,6 @@ This dashboard follows modern web design principles:
 ### Daily Returns
 - Percentage change in closing price from previous day
 - Used to calculate volatility and identify trends
-
-## 🚀 Deployment
-
-### Deploy to Vercel
-
-1. **Install Vercel CLI** (if not already installed):
-```bash
-npm install -g vercel
-```
-
-2. **Deploy**:
-```bash
-vercel
-```
-
-3. **Follow the prompts** to link your project
-
-Alternatively, deploy via the [Vercel Dashboard](https://vercel.com):
-1. Import your Git repository
-2. Vercel auto-detects Next.js
-3. Click "Deploy"
-
-Your dashboard will be live at `https://your-project.vercel.app`
 
 ## 🔮 Future Improvements
 
