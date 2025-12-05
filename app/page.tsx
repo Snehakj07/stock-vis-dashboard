@@ -4,10 +4,10 @@ import { useState, useMemo } from 'react';
 import { AreaChart, Area, BarChart, Bar, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts';
 import stocksData from '../data/stocks.json';
 
-type Ticker = 'AAPL' | 'TSLA' | 'MSFT';
+type Ticker = 'AMZN' | 'DPZ' | 'BTC' | 'NFLX';
 
 export default function Home() {
-  const [selectedTicker, setSelectedTicker] = useState<Ticker>('AAPL');
+  const [selectedTicker, setSelectedTicker] = useState<Ticker>('AMZN');
   const [showSMA20, setShowSMA20] = useState(true);
   const [showSMA50, setShowSMA50] = useState(true);
   const [showSMA100, setShowSMA100] = useState(false);
@@ -64,14 +64,14 @@ export default function Home() {
       <header style={{ background: 'linear-gradient(to right, #2563eb, #9333ea, #ec4899)', color: 'white', padding: '4rem 1.5rem' }}>
         <div style={{ maxWidth: '80rem', margin: '0 auto' }}>
           <h1 style={{ fontSize: '3rem', fontWeight: 'bold', marginBottom: '1rem' }}>📈 Stock Market Analytics</h1>
-          <p style={{ fontSize: '1.25rem', opacity: 0.9 }}>Interactive visualization dashboard for AAPL, TSLA, and MSFT stock analysis</p>
+          <p style={{ fontSize: '1.25rem', opacity: 0.9 }}>Interactive visualization dashboard for AMZN, DPZ, BTC, and NFLX analysis (May 2013 - May 2019)</p>
         </div>
       </header>
 
       <main style={{ maxWidth: '80rem', margin: '0 auto', padding: '3rem 1.5rem' }}>
         <div style={{ display: 'grid', gridTemplateColumns: '1fr', gap: '1.5rem' }}>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '1rem' }}>
-            {(['AAPL', 'TSLA', 'MSFT'] as Ticker[]).map((ticker) => (
+            {(['AMZN', 'DPZ', 'BTC', 'NFLX'] as Ticker[]).map((ticker) => (
               <button key={ticker} onClick={() => setSelectedTicker(ticker)} style={{ padding: '1rem', borderRadius: '1rem', fontWeight: '600', border: 'none', cursor: 'pointer', background: selectedTicker === ticker ? '#2563eb' : '#f1f5f9', color: selectedTicker === ticker ? 'white' : '#334155', transition: 'all 0.2s' }}>{ticker}</button>
             ))}
           </div>

@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Stock Market Analytics Dashboard",
-  description: "Interactive visualization dashboard for stock market analysis featuring AAPL, TSLA, and MSFT",
+  description: "Interactive visualization dashboard for stock market analysis featuring AMZN, DPZ, BTC, and NFLX (Kaggle Dataset: May 2013 - May 2019)",
 };
 
 export default function RootLayout({
