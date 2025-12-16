@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useMemo, useEffect } from 'react';
-import { AreaChart, Area, BarChart, Bar, LineChart, Line, ScatterChart, Scatter, ComposedChart, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend, ZAxis, Cell } from 'recharts';
+import { AreaChart, Area, LineChart, Line, ComposedChart, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Legend } from 'recharts';
 import stocksData from '../data/stocks.json';
 
 type Ticker = 'AMZN' | 'DPZ' | 'BTC' | 'NFLX';
@@ -47,23 +47,7 @@ export default function Home() {
     });
   }, [data]);
 
-  // Calculate scatter plot data for volume-price relationship
-  const scatterData = useMemo(() => {
-    return data.map((item: any, index: number, array: any[]) => {
-      if (index === 0) return null;
-      const prevClose = array[index - 1].close;
-      const priceChange = ((item.close - prevClose) / prevClose) * 100;
-      return {
-        date: item.date,
-        priceChange: parseFloat(priceChange.toFixed(2)),
-        volume: item.volume,
-        volatility: item.volatility || 0,
-        isUp: item.close >= item.open,
-        close: item.close,
-        open: item.open
-      };
-    }).filter(Boolean);
-  }, [data]);
+
 
 
   // Calculate correlation matrix
