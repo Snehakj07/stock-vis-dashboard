@@ -249,7 +249,6 @@ export default function Home() {
           <div style={{ display: 'grid', gridTemplateColumns: showVolatility ? 'repeat(auto-fit, minmax(300px, 1fr))' : '1fr', gap: '1.5rem' }}>
             <div style={{ background: theme.cardBg, borderRadius: '1rem', padding: '1.5rem', boxShadow: '0 8px 16px -2px rgb(0 0 0 / 0.2)', border: `3px solid ${isDarkMode ? '#8b5cf6' : '#a855f7'}`, position: 'relative' }}>
               <div style={{ position: 'absolute', top: '-12px', left: '20px', background: 'linear-gradient(135deg, #8b5cf6, #a855f7)', color: 'white', padding: '0.25rem 1rem', borderRadius: '9999px', fontSize: '0.75rem', fontWeight: 'bold', boxShadow: '0 4px 6px -1px rgb(0 0 0 / 0.3)' }}>
-                ✨ ENHANCED
               </div>
               <h3 style={{ fontSize: '1.5rem', fontWeight: 'bold', marginBottom: '0.5rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                 📊 Volume Analysis
@@ -330,7 +329,6 @@ export default function Home() {
           {/* Correlation Heatmap */}
           <div style={{ background: theme.cardBg, borderRadius: '1rem', padding: '1.5rem', boxShadow: '0 8px 16px -2px rgb(0 0 0 / 0.2)', border: `3px solid ${isDarkMode ? '#10b981' : '#059669'}`, position: 'relative' }}>
             <div style={{ position: 'absolute', top: '-12px', left: '20px', background: 'linear-gradient(135deg, #10b981, #059669)', color: 'white', padding: '0.25rem 1rem', borderRadius: '9999px', fontSize: '0.75rem', fontWeight: 'bold', boxShadow: '0 4px 6px -1px rgb(0 0 0 / 0.3)' }}>
-              ✨ NEW
             </div>
             <h3 style={{ fontSize: '1.5rem', fontWeight: 'bold', marginBottom: '0.5rem' }}>🔗 Stock Correlation Matrix</h3>
             <p style={{ color: theme.textSecondary, marginBottom: '1rem', fontSize: '0.875rem' }}>Shows how stocks move together. Green = positive correlation, Red = negative correlation</p>
