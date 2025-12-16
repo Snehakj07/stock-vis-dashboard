@@ -6,9 +6,8 @@ A beautiful, interactive data visualization dashboard for analyzing stock market
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue?style=for-the-badge&logo=typescript)
 ![Recharts](https://img.shields.io/badge/Recharts-2.15-8b5cf6?style=for-the-badge)
 
-**🌐 Live Demo:** https://stock-vis-kaggle.vercel.app  
-**📂 GitHub:** https://github.com/Snehakj07/stock-visualisation-dashboard
-
+**🌐 Live Demo:** https://stock-visual-dashboard.vercel.app/
+**📂 GitHub:** https://github.com/Snehakj07/stock-vis-dashboard
 ---
 
 ## 🎯 Project Overview
@@ -68,7 +67,7 @@ This project demonstrates a complete end-to-end data analysis and visualization 
 
 ```
 Frontend:     Next.js 16.0.7 (React 19)
-Language:     TypeScript
+Language:     TypeScript, Python
 Charts:       Recharts 2.15.0
 Styling:      Inline styles (responsive)
 Deployment:   Vercel
@@ -108,42 +107,6 @@ AMZN: $248.23 → $1,840.12 (+641.3%)
 DPZ:  $51.19 → $272.86 (+433.0%)
 BTC:  $106.25 → $8,183.83 (+7,602.4%) 🚀
 NFLX: $30.42 → $345.61 (+1,036.3%)
-```
-
----
-
-## 🚀 Getting Started
-
-### Prerequisites
-- Node.js 18+ installed
-- npm package manager
-
-### Installation
-
-1. **Clone the repository**:
-```bash
-git clone https://github.com/Snehakj07/stock-visualisation-dashboard.git
-cd stock-vis-dashboard
-```
-
-2. **Install dependencies**:
-```bash
-npm install
-```
-
-3. **Run the development server**:
-```bash
-npm run dev
-```
-
-4. **Open your browser**:
-Navigate to [http://localhost:3000](http://localhost:3000)
-
-### Build for Production
-
-```bash
-npm run build
-npm start
 ```
 
 ---
@@ -296,14 +259,6 @@ npm run start        # Start production server
 
 ---
 
-## 📝 Documentation
-
-- **Complete Walkthrough**: Detailed project documentation
-- **Presentation Guide**: Talking points for demos
-- **Data Processing**: CSV to JSON pipeline documentation
-
----
-
 ## 📊 Project Statistics
 
 ```
@@ -334,5 +289,5 @@ This project is open source and available under the MIT License.
 
 **Built with ❤️ using Next.js, TypeScript, and Recharts**
 
-🌐 **Live Demo**: https://stock-vis-kaggle.vercel.app  
-📂 **GitHub**: https://github.com/Snehakj07/stock-visualisation-dashboard
+🌐 **Live Demo**: https://stock-visual-dashboard.vercel.app/
+📂 **GitHub**: https://github.com/Snehakj07/stock-vis-dashboard
