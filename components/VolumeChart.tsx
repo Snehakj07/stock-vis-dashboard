@@ -18,6 +18,8 @@ export default function VolumeChart({ data }: VolumeChartProps) {
                     <XAxis
                         dataKey="date"
                         stroke="#64748b"
+                        interval="preserveStartEnd"
+                        minTickGap={30}
                         tick={{ fontSize: 12 }}
                         tickFormatter={(value) => {
                             const date = new Date(value);
@@ -28,6 +30,7 @@ export default function VolumeChart({ data }: VolumeChartProps) {
                         stroke="#64748b"
                         tick={{ fontSize: 12 }}
                         tickFormatter={(value) => {
+                            domain = { ['dataMin - 100000', 'dataMax + 100000']}
                             if (value >= 1000000) return `${(value / 1000000).toFixed(1)}M`;
                             if (value >= 1000) return `${(value / 1000).toFixed(0)}K`;
                             return value;
@@ -43,7 +46,7 @@ export default function VolumeChart({ data }: VolumeChartProps) {
                         labelFormatter={(value) => new Date(value).toLocaleDateString()}
                         formatter={(value: number) => [value.toLocaleString(), 'Volume']}
                     />
-                    <Bar dataKey="volume" fill="#8b5cf6" radius={[8, 8, 0, 0]} />
+                    <Bar dataKey="volume" fill="#8b5cf6" barSize={6} radius={[8, 8, 0, 0]} />
                 </BarChart>
             </ResponsiveContainer>
         </div>
